@@ -1,0 +1,7 @@
+
+# Ignore directories
+*/
+
+# Ignore files
+*dat
+*~
