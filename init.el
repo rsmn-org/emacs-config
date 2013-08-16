@@ -12,7 +12,8 @@
     ac-nrepl
     popup
     auto-complete
-    highlight-parentheses))
+    highlight-parentheses
+    rainbow-delimiters))
 
 
 (dolist (p my-packages)
@@ -42,3 +43,6 @@
     (set-cursor-color "#ffffff")))
 (frame-bg (selected-frame))
 (add-hook 'after-make-frame-functions 'frame-bg)
+
+(require 'rainbow-delimiters)
+(add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
